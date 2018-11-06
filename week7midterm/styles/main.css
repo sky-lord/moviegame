@@ -1,0 +1,184 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+	margin: auto;
+	padding: 0px;
+	font-family: arial;
+	font-size: 12px;
+	background-image: linear-gradient(#735ad0, #311b6d);
+	height: 100vh;
+}
+
+main {
+	border-bottom: 1px solid rgba(255,255,255,.5);
+	  border-left:  rgba(0,0,0,0);
+	  border-right:  rgba(0,0,0,0);
+	  border-top:  rgba(0,0,0,0);
+	  width: 90%;
+	  margin-left: 65px;
+}
+
+/*.recipeItem {
+	height: 39px;
+}*/
+
+.titles {
+	user-select: none;
+	cursor: pointer;
+	background-color: rgba(0,0,0,.5);
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	padding: 5px 5px;
+	width: 200px;
+	opacity: 0;
+	position: absolute;
+  	bottom: 23%;
+}
+
+.movies {
+	max-width: 20px;
+	max-height: 250px;
+	text-align: left;
+	overflow: hidden;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	margin: 15px;
+}
+
+.movies:hover {
+	max-width: 200px;
+}
+
+.movies:hover > .titles {
+	opacity: 1;
+}
+
+.game {
+	max-width: 20px;
+	max-height: 250px;
+	text-align: left;
+	overflow: hidden;
+	margin: 15px;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game:hover {
+	max-width: 200px;
+}
+
+.game:hover > .titles {
+	opacity: 1;
+}
+
+#gameContent {
+	background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.7), rgba(0,0,0,0));
+	margin-top: 50px;
+	margin-left: 8%;
+	display: inline-flex;
+}
+
+::placeholder {
+    color: white;
+    opacity: .5;
+}
+
+#gameInput {
+	margin-top: 35px;
+	margin-left: 5%;
+	  background-color: rgba(0,0,0,0);
+	  padding: 5px 20px;
+	  font-size: 20px;
+	  margin-bottom: 10px;
+	  border-bottom: 2px solid #fff;
+	  border-left:  rgba(0,0,0,0);
+	  border-right:  rgba(0,0,0,0);
+	  border-top:  rgba(0,0,0,0);
+	  color: white;
+}
+
+#searchBtn {
+  display: inline-block;
+  padding: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgba(255,255,255,.2);
+  border: none;
+  margin: 10px;
+  border-radius: 50px;
+  box-shadow: 0 4px rgba(0,0,0,.3);
+}
+
+#searchBtn:active {
+  box-shadow: 0 1px rgba(0,0,0,.3);
+  transform: translateY(4px);
+}
+
+p {
+	display: inline-block;
+	margin-left: 225px;
+	color: white;
+	font-size: 20px;
+}
+
+#genreCats {
+	margin-left: 35px;
+	background-color: rgba(0,0,0,0);
+	  font-size: 20px;
+	  padding-left: 10px;
+	  padding-right: 10px;
+	  border-bottom: 2px solid #fff;
+	  border-left:  rgba(0,0,0,0);
+	  border-right:  rgba(0,0,0,0);
+	  border-top:  rgba(0,0,0,0);
+	  color: white;
+}
+
+.recipeImage {
+	border-radius: 50px;
+	box-shadow: 3px 3px #ccc;
+}
+
+.detailsBtn {
+	height: 500px;
+	width: 100%;
+	background-color: rgba(0,0,0,.5);
+	color: white;
+	vertical-align: center;
+	text-align: center;
+	font-family: 'Norican', cursive;
+	font-size: 24px;
+}
+
+.yield {
+	margin-top: 10px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+	margin-left: -100px;
+}
+
+#pagination {
+	font-weight: bold;
+	text-align: left;
+	margin-top: 20px;
+	margin-left: -450px;
+}
+
+.pageNo {
+	color: blue;
+	cursor: pointer;
+}
