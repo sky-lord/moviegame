@@ -12,7 +12,7 @@ body {
 	font-family: arial;
 	font-size: 12px;
 	background-image: linear-gradient(#735ad0, #311b6d);
-	height: 100vh;
+	height: 130vh;
 }
 
 main {
@@ -22,6 +22,7 @@ main {
 	  border-top:  rgba(0,0,0,0);
 	  width: 90%;
 	  margin-left: 65px;
+	  max-width: 90%;
 }
 
 /*.recipeItem {
@@ -39,12 +40,26 @@ main {
 	width: 200px;
 	opacity: 0;
 	position: absolute;
-  	bottom: 23%;
+  	bottom: 38%;
+}
+
+.titles2 {
+	user-select: none;
+	cursor: pointer;
+	background-color: rgba(0,0,0,.5);
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	padding: 5px 5px;
+	width: 200px;
+	opacity: 0;
+	position: absolute;
+  	top: 100%;
 }
 
 .movies {
 	max-width: 20px;
-	max-height: 250px;
+	max-height: 150px;
 	text-align: left;
 	overflow: hidden;
 	display: flex;
@@ -54,7 +69,7 @@ main {
 }
 
 .movies:hover {
-	max-width: 200px;
+	max-width: 150px;
 }
 
 .movies:hover > .titles {
@@ -67,6 +82,7 @@ main {
 	text-align: left;
 	overflow: hidden;
 	margin: 15px;
+	top: 50%;
 	display: flex;
   align-items: center;
   justify-content: center;
@@ -76,11 +92,18 @@ main {
 	max-width: 200px;
 }
 
-.game:hover > .titles {
+.game:hover > .titles2 {
 	opacity: 1;
 }
 
 #gameContent {
+	background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.7), rgba(0,0,0,0));
+	margin-top: 8%;
+	margin-left: 8%;
+	display: inline-flex;
+}
+
+#movieContent {
 	background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.7), rgba(0,0,0,0));
 	margin-top: 50px;
 	margin-left: 8%;
@@ -93,8 +116,9 @@ main {
 }
 
 #gameInput {
+	max-width: 20%;
 	margin-top: 35px;
-	margin-left: 5%;
+	margin-left: 7%;
 	  background-color: rgba(0,0,0,0);
 	  padding: 5px 20px;
 	  font-size: 20px;
@@ -109,6 +133,7 @@ main {
 #searchBtn {
   display: inline-block;
   padding: 5px;
+  max-width: 10%;
   font-size: 15px;
   cursor: pointer;
   text-align: center;
@@ -129,13 +154,14 @@ main {
 
 p {
 	display: inline-block;
-	margin-left: 225px;
+	margin-left: 5%;
 	color: white;
-	font-size: 20px;
+	font-size: 150%;
 }
 
 #genreCats {
 	margin-left: 35px;
+	max-width: 20%;
 	background-color: rgba(0,0,0,0);
 	  font-size: 20px;
 	  padding-left: 10px;
@@ -144,41 +170,19 @@ p {
 	  border-left:  rgba(0,0,0,0);
 	  border-right:  rgba(0,0,0,0);
 	  border-top:  rgba(0,0,0,0);
-	  color: white;
+	  color: #bbb;
 }
 
-.recipeImage {
-	border-radius: 50px;
-	box-shadow: 3px 3px #ccc;
-}
-
-.detailsBtn {
-	height: 500px;
-	width: 100%;
-	background-color: rgba(0,0,0,.5);
-	color: white;
-	vertical-align: center;
-	text-align: center;
-	font-family: 'Norican', cursive;
-	font-size: 24px;
-}
-
-.yield {
-	margin-top: 10px;
-	text-align: center;
-	font-weight: bold;
-	font-size: 14px;
-	margin-left: -100px;
-}
-
-#pagination {
-	font-weight: bold;
-	text-align: left;
-	margin-top: 20px;
-	margin-left: -450px;
-}
-
-.pageNo {
-	color: blue;
-	cursor: pointer;
+#popCats {
+	margin-left: 35px;
+	max-width: 20%;
+	background-color: rgba(0,0,0,0);
+	  font-size: 20px;
+	  padding-left: 10px;
+	  padding-right: 10px;
+	  border-bottom: 2px solid #fff;
+	  border-left:  rgba(0,0,0,0);
+	  border-right:  rgba(0,0,0,0);
+	  border-top:  rgba(0,0,0,0);
+	  color: #bbb;
 }
